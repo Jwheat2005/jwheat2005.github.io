@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = MImport;
+		cell = PSLinkCell;
+		detail = "MImportController";
+		icon = "icon.png";
+		isController = 1;
+		label = MImport;
+	};
+}

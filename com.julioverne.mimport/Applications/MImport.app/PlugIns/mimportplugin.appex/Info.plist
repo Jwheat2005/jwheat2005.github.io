@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>BuildMachineOSBuild</key>
+  <string>15A284</string>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleDisplayName</key>
+  <string>Import with MImport</string>
+  <key>CFBundleExecutable</key>
+  <string>mimportplugin</string>
+  <key>CFBundleIcons</key>
+  <dict>
+    <key>CFBundlePrimaryIcon</key>
+    <dict>
+      <key>CFBundleIconFiles</key>
+      <array>
+        <string>icon</string>
+      </array>
+      <key>UIPrerenderedIcon</key>
+      <true/>
+    </dict>
+  </dict>
+  <key>CFBundleIcons~ipad</key>
+  <dict>
+    <key>CFBundlePrimaryIcon</key>
+    <dict>
+      <key>CFBundleIconFiles</key>
+      <array>
+        <string>icon</string>
+      </array>
+      <key>UIPrerenderedIcon</key>
+      <true/>
+    </dict>
+  </dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.julioverne.mimport.mimportplugin</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>Import to MImport</string>
+  <key>CFBundlePackageType</key>
+  <string>XPC!</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleSupportedPlatforms</key>
+  <array>
+    <string>iPhoneOS</string>
+  </array>
+  <key>CFBundleVersion</key>
+  <string>1</string>
+  <key>DTCompiler</key>
+  <string>com.apple.compilers.llvm.clang.1_0</string>
+  <key>DTPlatformBuild</key>
+  <string></string>
+  <key>DTPlatformName</key>
+  <string>iphoneos</string>
+  <key>DTPlatformVersion</key>
+  <string>6.0</string>
+  <key>DTSDKBuild</key>
+  <string>14C66</string>
+  <key>DTSDKName</key>
+  <string>iphoneos10.2.internal</string>
+  <key>DTXcode</key>
+  <string>0800</string>
+  <key>DTXcodeBuild</key>
+  <string>8R174l</string>
+  <key>MinimumOSVersion</key>
+  <string>6.0</string>
+  <key>NSExtension</key>
+  <dict>
+    <key>NSExtensionAttributes</key>
+    <dict>
+      <key>NSExtensionActivationRule</key>
+      <string>SUBQUERY (
+    extensionItems,
+    $extensionItem,
+    SUBQUERY (
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.file-url"
+    ).@count == $extensionItem.attachments.@count &amp;&amp;
+    $extensionItem.attachments.@count == 1
+).@count == 1</string>
+    </dict>
+    <key>NSExtensionPointIdentifier</key>
+    <string>com.apple.ui-services</string>
+    <key>NSExtensionPrincipalClass</key>
+    <string>mimportpluginViewControllerShow</string>
+  </dict>
+  <key>UIDeviceFamily</key>
+  <array>
+    <integer>1</integer>
+    <integer>2</integer>
+  </array>
+</dict>
+</plist>

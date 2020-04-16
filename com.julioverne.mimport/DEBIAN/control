@@ -1,0 +1,12 @@
+Package: com.julioverne.mimport
+Name: MImport
+Author: julioverne <julioverne@me.com>
+Version: 0.0~beta36a
+Depends: mobilesubstrate, firmware (>= 6.0), unzip, unrar
+Architecture: iphoneos-arm
+Description: Media Importer Directly From Music App
+Homepage: http://twitter.com/ijulioverne
+Maintainer: Julio
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/MImport.bundle/icon@2x.png
+Depiction: http://julioverne.github.io/description.html?id=com.julioverne.mimport
